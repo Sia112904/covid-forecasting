@@ -1,0 +1,9 @@
+Data Ingestion Frequency:
+- Johns Hopkins CSSE: Daily (CSV updates once per day)
+- COVID Tracking Project: Static (archived, no updates)
+- WHO: Daily
+- CDC: Daily
+
+Reason:
+COVID-19 data is reported daily and used for time-series forecasting.
+

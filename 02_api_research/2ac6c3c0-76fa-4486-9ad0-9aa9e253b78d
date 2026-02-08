@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en_AU" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en_AU" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en_AU" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en_AU"> <!--<![endif]-->
+  <head>
+
+    <script type="application/javascript">
+      /**
+       * A map holding all the information to be sent to the analytics servers
+       * @type {object}
+       */
+      var analyticsInfo = {
+          'organizationName': 'world-health-organization',
+          'organizationId': 'c021f6be-3598-418e-8f7f-c7a799194dba',
+          'groupNames': ["world"],
+          'groupIds': ["world"],
+          'isCod': false,
+          'isIndicator': false,
+          'isArchived': false,
+          'datasetName': 'coronavirus-covid-19-cases-and-deaths',
+          'datasetId': '93e35ea7-7d0c-427e-a2d5-aa72074e2050',
+          'pageTitle': 'WHO-COVID-19-global-data.csv | Coronavirus (COVID-19) Cases and Deaths | Humanitarian Dataset',
+          'datasetAvailability': 'public',
+          'cameFrom': '',
+          'supportsNotifications': '',
+          'authenticated': 'false',
+          'accountType': '',
+      };
+    </script>
+
+    
+        <!-- start Mixpanel -->
+<script type="text/javascript">
+    (function (e, b) {
+        if (!b.__SV) {
+            var a, f, i, g;
+            window.mixpanel = b;
+            b._i = [];
+            b.init = function (a, e, d) {
+                function f(b, h) {
+                    var a = h.split(".");
+                    2 == a.length && (b = b[a[0]], h = a[1]);
+                    b[h] = function () {
+                        b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }
+
+                var c = b;
+                "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+                c.people = c.people || [];
+                c.toString = function (b) {
+                    var a = "mixpanel";
+                    "mixpanel" !== d && (a += "." + d);
+                    b || (a += " (stub)");
+                    return a
+                };
+                c.people.toString = function () {
+                    return c.toString(1) + ".people (stub)"
+                };
+                i = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                for (g = 0; g < i.length; g++)f(c, i[g]);
+                b._i.push([a, e, d])
+            };
+            b.__SV = 1.2;
+            a = e.createElement("script");
+            a.type = "text/javascript";
+            a.async = !0;
+            a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+            f = e.getElementsByTagName("script")[0];
+            f.parentNode.insertBefore(a, f)
+        }
+    })(document, window.mixpanel || []);
+    mixpanel.init("5cbf12bc9984628fb2c55a49daf32e74");
+
+    var mixpanelTrackData = {
+      "page title": analyticsInfo.pageTitle,
+      "org name": analyticsInfo.organizationName,
+      "org id": analyticsInfo.organizationId,
+      "group names": analyticsInfo.groupNames,
+      "group ids": analyticsInfo.groupIds,
+      "authenticated": analyticsInfo.authenticated,
+      "dataset availability": analyticsInfo.datasetAvailability,
+      "is cod": analyticsInfo.isCod,
+      "is indicator": analyticsInfo.isIndicator,
+      "is archived": analyticsInfo.isArchived,
+      "dataset id": analyticsInfo.datasetId,
+      "dataset name": analyticsInfo.datasetName,
+      "came from": analyticsInfo.cameFrom,
+      "supports notifications": analyticsInfo.supportsNotifications,
+    };
+
+    if(analyticsInfo.accountType) {
+      mixpanelTrackData['account type'] = analyticsInfo.accountType;
+    }
+
+    mixpanel.track("page view", mixpanelTrackData);
+</script>
+<!-- end Mixpanel -->
+    
+
+    
+      <!-- Google Tag Manager - DATALAYER -->
+      <script type="application/javascript">
+        window.dataLayer = window.dataLayer || [];
+
+        <!-- Google Analytics - custom properties (dimensions) -->
+        (function() {
+            if (analyticsInfo.organizationName !== 'None') {
+                dataLayer.push({
+                  'org_name': analyticsInfo.organizationName
+                });
+            }
+
+            
+
+            var locationNames = analyticsInfo.groupNames.length < 15 ? analyticsInfo.groupNames.join('~') : 'many';
+            if (locationNames) {
+                dataLayer.push({
+                  'location_names': locationNames
+                });
+            }
+        }());
+        <!-- END - Google Analytics - custom properties (dimensions) -->
+      </script>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MFNPQ7K');</script>
+      <!-- End Google Tag Manager -->
+
+    
+
+    
+    
+    
+    <meta charset="utf-8" />
+
+      <meta name="csrf_field_name" content="_csrf_token" />
+      <meta name="_csrf_token" content="IjIxOTlmMmU1MTBlODVmODY2MWM2MzcwNjU2OWJmZjdiY2NiNTEzYzYi.aYf6SA.V_LR4iWiHaDGUMsgfC9mlZDJtV0" />
+
+      <meta name="referrer" content="always">
+      <meta name="generator" content="ckan " />
+    <meta name="description" content=" " />
+
+    <title>WHO-COVID-19-global-data.csv | Coronavirus (COVID-19) Cases and Deaths | Humanitarian Dataset  | HDX</title>
+
+    
+
+    <meta property="og:image" content="https://data.humdata.org/images/hxl_fb-01.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="search" type="application/opensearchdescription+xml" title="HDX Search" href="/xml/opensearch.xml">
+    
+  
+    
+  
+  
+    
+  
+
+
+    
+      
+      
+    
+  
+  <meta property="og:title" content="Coronavirus (COVID-19) Cases and Deaths - WHO-COVID-19-global-data.csv - Humanitarian Data Exchange">
+  <meta property="og:description" content="">
+
+
+    <link rel=preconnect href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="/webassets/ckanext-hdx_theme/1a955e59_page-common-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/bf727195_search-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/9e3fe175_page-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/cddb38c2_popup-styles.css" rel="stylesheet"/>
+<link href="/widget/onboarding/onboarding.css" rel="stylesheet"/>
+<link href="/widget/onboarding/two-column.css" rel="stylesheet"/>
+<link href="/widget/onboarding/notification.css" rel="stylesheet"/>
+<link href="/widget/onboarding/logout.css" rel="stylesheet"/>
+<link href="/widget/onboarding/login.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/926db7ac_onboarding-verify-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/57be9676_onboarding-survey-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-hdx_theme/d41d8cd9_onboarding-anon.css" rel="stylesheet"/>
+    
+  </head>
+
+  
+  <body data-site-root="/" data-locale-root="/" data-api-root="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFNPQ7K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+    
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+<div id="logoutPopup" class="popup popup-onbording" style="display: none;" >
+    <div class="content ">
+        
+            <div class="row">
+                
+                <div class="col-12">
+                    
+    <div class="notification-widget">
+        <div class="notification-title ">
+            
+                You logged out of HDX
+            
+            <i class="close humanitarianicons-Exit-Cancel"></i>
+        </div>
+        <div>
+            <div>
+                
+    <div class="logout-widget">
+        <div class="center">
+            <img class="mTop20 lazyload" data-src="/images/onboarding/logout.png">
+            <div class="mTop30 notification-message">
+                Thank you for using HDX !
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+
+                </div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+    
+
+    
+      
+      <div class="container">
+        <div class="paddingRowHack">
+          
+
+
+
+
+
+
+
+
+
+
+<!-- MOBILE NAV START -->
+<nav class="navbar navbar-static-top new-header d-block" role="navigation">
+    <div class="global-header"> <!-- header is streched for the homepage -->
+    <div class="header-message global-header-bg">
+        <div class="header-message-container">
+            <img class="header-message-image lazyload" data-src="/images/empty.png" />
+        </div>
+    </div>
+    <div class="global-header-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 global-header-content">
+            <a href="#" data-bs-toggle="dropdown" class="ocha-services" aria-label="OCHA services">
+              <span class="ocha-logo"></span>
+              <span class="ocha-services-text">OCHA Services</span>
+
+              <svg class="icon-o-arrow-up" viewBox="0 0 48 48"><path d="M0,34a4,4,0,0,1,1.17-2.83l20-20a4,4,0,0,1,5.66,0l20,20a4,4,0,1,1-5.66,5.66L24,19.66,6.83,36.83A4,4,0,0,1,0,34Z"/></svg>
+              <svg class="icon-o-arrow-down" viewBox="0 0 48 48"><path d="M48,14a4,4,0,0,1-1.17,2.83l-20,20a4,4,0,0,1-5.66,0l-20-20a4,4,0,0,1,5.66-5.66L24,28.34,41.17,11.17A4,4,0,0,1,48,14Z"/></svg>
+            </a>
+            <div class="dropdown-menu ocha-services-menu" role="menu">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 col-12 section-spacing">
+                    <p class="list-title">
+                      Related Platforms
+                    </p>
+                    <ul class="ocha-links-list">
+                      <li>
+                        <a href="https://centre.humdata.org/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">Centre for Humanitarian Data</a>
+                      </li>
+                      <li>
+                        <a href="https://hxlstandard.org/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">Humanitarian Exchange Language (HXL)</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 col-12">
+                    <p class="list-title">
+                      Other OCHA Services
+                    </p>
+                    <ul class="ocha-links-list">
+                      <li>
+                        <a href="https://fts.unocha.org/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">Financial Tracking Service</a>
+                      </li>
+                      <li>
+                        <a href="https://data.humdata.org/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">Humanitarian Data Exchange</a>
+                      </li>
+                      <li>
+                        <a href="https://humanitarian.id/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">Humanitarian ID</a>
+                      </li>
+                      <li>
+                        <a href="https://humanitarianaction.info/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">Humanitarian Action</a>
+                      </li>
+                      <li>
+                        <a href="https://response.reliefweb.int/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">ReliefWeb Response</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 col-12 section-spacing">
+                    <p class="list-title list-title-empty">
+                      &nbsp;
+                    </p>
+                    <ul class="ocha-links-list">
+                      <li>
+                        <a href="https://interagencystandingcommittee.org/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">Inter-Agency Standing Committee</a>
+                      </li>
+                      <li>
+                        <a href="https://www.unocha.org" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">OCHA Website</a>
+                      </li>
+                      <li>
+                        <a href="https://reliefweb.int" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">Relief Web</a>
+                      </li>
+                      <li>
+                        <a href="https://vosocc.unocha.org/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header">Virtual OSOCC</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 col-12">
+                    <a href="https://www.unocha.org/ocha-digital-services" target="_blank" data-module="hdx_click_stopper" data-module-link_type="header" class="btn ocha-see-all">
+                      See all
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="header-user-box float-end">
+
+              <ul class="separated-list">
+                
+<!--                 <li>
+                  <a class="action-red" href="/faqs/covid" data-module="hdx_click_stopper" data-module-link_type="footer" aria-label="faq link">
+                    <span class="action-text">
+                      <span class="full-text">Data Responsibility for </span>COVID-19
+                    </span>
+                  </a>
+                </li> -->
+                <li>
+                  <a class="action" href="/faq" data-module="hdx_click_stopper" data-module-link_type="footer" aria-label="faq link">
+                    <svg class="icon-o-help" viewBox="0 0 48 48"><path d="M29,43a5,5,0,0,1-5,5,5,5,0,1,1,3.53-8.53A4.82,4.82,0,0,1,29,43Z"/><path d="M24,0A11,11,0,0,0,13,11a4,4,0,0,0,8,0,3,3,0,0,1,6,0h0c0,2-.64,3-2.33,4.67-2,2-4.67,4.67-4.67,9.33v5a4,4,0,0,0,8,0V25c0-1.23.64-2,2.33-3.67A14.43,14.43,0,0,0,35,11h0A11,11,0,0,0,24,0Z"/></svg>
+                    <span class="action-text">
+                      FAQ
+                    </span>
+                  </a>
+                </li>
+
+                  
+                    
+                      <li>
+                        <a class="action" class="special-menuitem"
+                           href="/sign-in?came_from=/dataset/coronavirus-covid-19-cases-and-deaths/resource/2ac6c3c0-76fa-4486-9ad0-9aa9e253b78d" aria-label="login">
+                          <svg class="icon-o-user" viewBox="0 0 48 48">
+                            <path d="M23,24h2A16,16,0,0,1,41,40v4a0,0,0,0,1,0,0H7a0,0,0,0,1,0,0V40A16,16,0,0,1,23,24Z"/>
+                            <rect x="15" y="4" width="18" height="18" rx="9" ry="9"/>
+                          </svg>
+                          <span class="action-text">
+                          Log in
+                        </span>
+
+                        </a>
+                      </li>
+                      <li>
+                        <a class="action"
+                           href="/signup/" aria-label="sign up">
+                          <svg class="icon-o-checked" viewBox="0 0 48 48">
+                            <path
+                              d="M24,2A22,22,0,1,0,46,24,22,22,0,0,0,24,2ZM38.06,18.37,23,33.83a2.92,2.92,0,0,1-2.9.8,3,3,0,0,1-1.6-.83L10,25.29A3,3,0,0,1,14.2,21l6.5,6.5L33.77,14.17a3,3,0,1,1,4.29,4.19Z"/>
+                          </svg>
+                          <span class="action-text">
+                            Sign up
+                          </span>
+                        </a>
+                      </li>
+                    
+                  
+
+                
+                
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+    <div class="hdx-header">
+    <div class="container">
+        <div class="navbar-header">
+          <div class="hdxLogo">
+              <a class="logo" href="/" aria-label="Humanitarian Data Exchange Logo"><div class="logo-img"></div><span id="hdxVersion">v2.9.4</span></a>
+          </div>
+          <div class="header-nav-search">
+            <div id="previous-searches" style="display: none;">
+                []
+            </div>
+            <form class="header-search-form" method="get" action="/search?sort=metadata_modified+desc">
+              <div id="input-search">
+                <div class="header-search-group input-group">
+                  <span class="input-group-text"><i class="humanitarianicons-Search"></i></span>
+                  <input type="text" class="searchInput form-control" id="qMobile" name="q" value="" autocomplete="off" placeholder="Search Datasets" aria-label="Search Datasets">
+                  <input type="hidden" value="main-nav" name="ext_search_source" />
+                </div>
+                <div class="search-ahead"></div>
+              </div>
+            </form>
+          </div>
+            <button class="navbar-toggler collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="mainLinks">
+            
+            <li><a href="/dataset" data-module="hdx_click_stopper" data-module-link_type="main nav">Data</a></li>
+            <li><a href="/group" data-module="hdx_click_stopper" data-module-link_type="main nav">Locations</a></li>
+            <li><a href="/organization" data-module="hdx_click_stopper" data-module-link_type="main nav">Organisations</a></li>
+            <li style="position: relative">
+              <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                <span id="crises-label" >Products <i class="humanitarianicons-Down"></i></span>
+              </a>
+              <ul class="dropdown-menu crises-menu" role="menu" aria-labelledby="crises-label">
+                <li class="crises-group">
+                  
+                  <ul>
+                    
+                    <li>
+                      <div><a href="/hapi" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_blank">
+                        HDX HAPI</a></div>
+                      <!--<div class="crises-datasets">[ ## Datasets ]</div>-->
+                    </li>
+                    
+                    <li>
+                      <div><a href="/signals" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_blank">
+                        HDX Signals</a></div>
+                      <!--<div class="crises-datasets">[ ## Datasets ]</div>-->
+                    </li>
+                    
+                    <li>
+                      <div><a href="/event/opt-israel-hostilities" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_self">
+                         occupied Palestinian territory-Israel Hostilities</a></div>
+                      <!--<div class="crises-datasets">[ ## Datasets ]</div>-->
+                    </li>
+                    
+                    <li>
+                      <div><a href="/cod" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_self">
+                        Common Operational Datasets (CODs)</a></div>
+                      <!--<div class="crises-datasets">[ ## Datasets ]</div>-->
+                    </li>
+                    
+                    <li>
+                      <div><a href="/dashboards/overview-of-data-grids" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_self">
+                        Data Grids</a></div>
+                      <!--<div class="crises-datasets">[ ## Datasets ]</div>-->
+                    </li>
+                    
+                    <li>
+                      <div><a href="/dataviz-gallery" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_self">
+                        Dataviz Gallery</a></div>
+                      <!--<div class="crises-datasets">[ ## Datasets ]</div>-->
+                    </li>
+                    
+                    <li>
+                      <div><a href="/dataviz-guide/" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_blank">
+                        HDX Dataviz Guidelines</a></div>
+                      <!--<div class="crises-datasets">[ ## Datasets ]</div>-->
+                    </li>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </ul>
+                </li>
+                
+                <li class="crises-group">
+
+                  <a class="archive" href="/archive" data-module="hdx_click_stopper" data-module-link_type="main nav">Archived <i class="icon humanitarianicons-Out-of-platform"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </li>
+                
+              </ul>
+            </li>
+            
+          </ul>
+            <span class="submit-data contribute-popup-init" dataset-id="DO_IGNORE"
+                data-module="hdx-onboarding-flow" data-start-page-type="add-data">
+                  
+                  
+                    <a href="/sign-in?info_message_type=add-data" onclick=""
+                       data-module="hdx_click_stopper" data-module-link_type="header add data">
+
+
+
+                  
+                  <div class="submitData">
+                    Add data
+                  </div>
+                </a>
+            </span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/dataset" data-module="hdx_click_stopper" data-module-link_type="main nav">Data</a></li>
+                <li><a href="/group" data-module="hdx_click_stopper" data-module-link_type="main nav">Locations</a></li>
+                <li><a href="/organization" data-module="hdx_click_stopper" data-module-link_type="main nav">Organisations</a></li>
+                <li class="crisis"><a class="crisis-title"><span>Products</span></a></li>
+                
+                
+                  <li class="crisis"><a href="/hapi" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_blank">HDX HAPI</a></li>
+                
+                  <li class="crisis"><a href="/signals" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_blank">HDX Signals</a></li>
+                
+                  <li class="crisis"><a href="/event/opt-israel-hostilities" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_self"> occupied Palestinian territory-Israel Hostilities</a></li>
+                
+                  <li class="crisis"><a href="/cod" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_self">Common Operational Datasets (CODs)</a></li>
+                
+                  <li class="crisis"><a href="/dashboards/overview-of-data-grids" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_self">Data Grids</a></li>
+                
+                  <li class="crisis"><a href="/dataviz-gallery" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_self">Dataviz Gallery</a></li>
+                
+                  <li class="crisis"><a href="/dataviz-guide/" data-module="hdx_click_stopper" data-module-link_type="main nav" target="_blank">HDX Dataviz Guidelines</a></li>
+                
+
+
+
+
+
+
+
+
+                <li class="crisis"><a href="/archive" class="crisis-title"><span>Products / Archived</span></a></li>
+
+
+
+                <li class="sub-nav"><a href="/faq" data-module="hdx_click_stopper" data-module-link_type="main nav">FAQ</a></li>
+<!--                 <li class="sub-nav"><a class="action-red" href="/faqs/covid" data-module="hdx_click_stopper" data-module-link_type="main nav"><span class="full-text">Data Responsibility for </span>COVID-19</a></li> -->
+                
+
+                <li class="sub-nav login top-pad">
+                  <a onclick="showOnboardingWidget('#loginPopup');" href="#" aria-label="login">Login</a> |
+                  <a href="/signup/" aria-label="sign up">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- MOBILE NAV END -->
+
+        </div>
+      </div>
+    
+  
+
+  
+      <div role="main">
+        <div id="content" class="container">
+          
+            
+              <div class="container">
+                <div class="row paddingRowHack toolbarRow">
+                  <div class="col-12 paddingLeftHack paddingRightHack">
+                    <div class="float-start">
+                      <div class="toolbar">
+                        
+                          
+                            <nav aria-label="breadcrumb">
+                              <ol class="breadcrumb" vocab="https://schema.org/" typeof="BreadcrumbList">
+                                
+<li class="breadcrumb-item home" property="itemListElement" typeof="ListItem">
+  <a href="/" property="item" typeof="WebPage">
+    <span property="name">Home</span>
+  </a>
+  <meta property="position" content="1">
+</li>
+                                
+  
+<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+  <a href="/dataset" property="item" typeof="WebPage">
+    <span property="name">Datasets</span>
+  </a>
+  <meta property="position" content="2">
+</li>
+  
+<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+  <a href="/dataset/coronavirus-covid-19-cases-and-deaths" property="item" typeof="WebPage">
+    <span property="name">Coronavirus (COVID-19)...</span>
+  </a>
+  <meta property="position" content="3">
+</li>
+  <li class="breadcrumb-item active"><a href="">WHO-COVID-19-global-data.csv</a></li>
+
+                              </ol>
+                            </nav>
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="paddingRowHack">
+                <div class="flash-messages paddingLeftHack paddingRightHack">
+                  
+                    
+                  
+                </div>
+              </div>
+            
+
+            <div class="container mainContent">
+              
+              <div class="hdx-wrapper wrapper no-nav">
+                
+                
+                  <div class="row paddingRowHack contentBackground">
+                    <div class="col-12 paddingLeftHack paddingRightHack">
+                      
+  
+    <section class="module module-resource">
+      
+        <div class="module-content">
+        <div class="actions">
+          
+          <ul class="mTop10 float-end">
+            
+            
+            
+              <li>
+                <a class="btn hdx-btn ga-download resource-btn resource-icon-btn resource-url-analytics resource-type-api" href="https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-daily-data.csv">
+                
+                  <span class="ga-download-resource-title" style="display: none">WHO-COVID-19-global-data.csv</span>
+                  <span class="ga-download-resource-id" style="display: none">2ac6c3c0-76fa-4486-9ad0-9aa9e253b78d</span>
+                </a>
+              </li>
+            
+            
+            
+          </ul>
+          
+        </div>
+        
+          <h1 class="page-heading">WHO-COVID-19-global-data.csv</h1>
+          
+
+             <p class="muted ellipsis">URL:
+              
+                
+                  <a href="https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-daily-data.csv" title="https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-daily-data.csv">https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-daily-data.csv</a>
+                
+              
+             </p>
+
+          
+          <div class="prose notes" property="rdfs:label">
+            
+              
+            
+            
+          </div>
+        
+      </div>
+        
+          
+          
+            
+              
+
+  <ul class="nav nav-tabs nav-tabs-plain" >
+    
+
+  
+  
+    
+      
+      
+
+
+  
+
+
+<li class="nav-item" data-id="98753dc6-af4f-4dbd-8b42-3b741b03917a">
+
+  <a href="/dataset/coronavirus-covid-19-cases-and-deaths/resource/2ac6c3c0-76fa-4486-9ad0-9aa9e253b78d?view_id=98753dc6-af4f-4dbd-8b42-3b741b03917a" class="nav-link active" data-id="98753dc6-af4f-4dbd-8b42-3b741b03917a">
+    <i class="fa icon fa-file-text-o"></i>
+    Data Explorer
+  </a>
+</li>
+    
+  
+</ul>
+
+            
+            <div class="module-content">
+              
+                <div class="resource-view">
+                  
+                    
+                      
+                        
+
+<div id="view-98753dc6-af4f-4dbd-8b42-3b741b03917a" class="resource-view" data-id="98753dc6-af4f-4dbd-8b42-3b741b03917a" data-title="Data Explorer" data-description="">
+  
+  <p class="desc clearfix"></p>
+  <div class="m-top ckanext-datapreview">
+
+
+
+    
+      <div class="data-viewer-error js-hide">
+        <p class="text-error">
+          <i class="icon-info-sign"></i>
+          This resource view is not available at the moment.
+          <a href="#" data-bs-toggle="collapse" data-bs-target="#data-view-error">
+            Click here for more information.
+          </a>
+        </p>
+        <p id="data-view-error" class="collapse"></p>
+        
+      </div>
+      
+        
+        
+          
+        
+      
+      <iframe src="//data.humdata.org/dataset/coronavirus-covid-19-cases-and-deaths/resource/2ac6c3c0-76fa-4486-9ad0-9aa9e253b78d/view/98753dc6-af4f-4dbd-8b42-3b741b03917a" frameborder="0" width="100%" data-module="data-viewer">
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+    
+  </div>
+  <div id="embed-98753dc6-af4f-4dbd-8b42-3b741b03917a" class="modal resource-view-embed">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Embed resource view</h3>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="embed-content">You can copy and paste the embed code into a CMS or blog software that supports raw HTML</p>
+              <div class="row-fluid">
+                <div class="span6">
+                  
+  <div class=" ">
+    
+      
+        <label class="control-label" for="width" >Width</label>
+      
+    
+    <div class="controls ">
+      <input id="width" type="text" class="form-control" name="width" value="700" placeholder=""  />
+  
+      <span class="error-block"></span>
+      
+    </div>
+  </div>
+
+
+                </div>
+                <div class="span6">
+                  
+  <div class=" ">
+    
+      
+        <label class="control-label" for="height" >Height</label>
+      
+    
+    <div class="controls ">
+      <input id="height" type="text" class="form-control" name="height" value="400" placeholder=""  />
+  
+      <span class="error-block"></span>
+      
+    </div>
+  </div>
+
+
+                </div>
+              </div>
+              
+  
+  
+  <div class=" pre ">
+    
+      
+        <label class="control-label" for="code" >Code</label>
+      
+    
+    <div class="controls ">
+      
+    <textarea id="code" class="form-control" name="code" cols="20" rows="3" placeholder="" ></textarea>
+  
+      <span class="error-block"></span>
+      
+    </div>
+  </div>
+
+
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+                      
+                    
+                  
+                </div>
+              
+            </div>
+          
+          
+        
+      
+    </section>
+  
+
+                    </div>
+                  </div>
+                
+
+                <div class="row paddingRowHack contentBackground">
+                  <div class="col-12 paddingLeftHack paddingRightHack">
+                    <div class="row">
+                      
+                      <div class=" col-12 ">
+                        
+  <div class="primary">
+    
+  
+
+  </div>
+
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                
+                
+
+              </div>
+            </div>
+
+          
+        </div>
+      </div>
+    
+    
+
+
+
+
+
+
+<div class="allow-cookies-container" style="display: none;">
+  <div class="container">
+    <div class="row paddingRowHack">
+      <div class="">
+        <div class="">
+            <div class="col-12 paddingLeftHack paddingRightHack">
+              <div class="row" style="position: relative;">
+                <div class="col-sm-9 col-12">
+                  By using this site you consent to the use of cookies. Cookies can be managed in your browser or device settings.
+                </div>
+
+                <button class="allow-cookies-continue">Continue</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="hdx-footer">
+  <div class="container">
+    <div class="row paddingRowHack" style="background-color: #353535;">
+      <div class="">
+        <div class="">
+            <div class="col-12 paddingLeftHack paddingRightHack">
+              <div class="row footer-wrapper">
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <img class="logo-gray lazyload" data-src="/images/homepage/logo-hdx-gray.svg" alt="HDX logo">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 mBottom30">
+                      <div class="titlePlusVersion">
+                        HUMANITARIAN DATA EXCHANGE &nbsp; v2.9.4
+                      </div>
+                      <div class="titlePlusVersion">
+                        Find, share and use humanitarian data all in one place
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mailChimpForm">
+                        <div class="subscribeText">Subscribe to our mailing list</div>
+                        <!-- Begin MailChimp Signup Form -->
+                        <div id="mc_embed_signup">
+                          <form action="//humdata.us14.list-manage.com/subscribe/post?u=ea3f905d50ea939780139789d&amp;id=99796325d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" _lpchecked="1">
+
+                            <div class="six columns left" style="padding-left: 0px;">
+                              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" aria-label="email">
+                              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <!--
+                            <div>
+                              <input type="text" name="b_83487eb1105d72ff2427e4bd7_6fd988326c" tabindex="-1" value="">
+                            </div>
+                            -->
+                            <div class="clear one columns left">
+                            </div>
+                          </form>
+                        </div>
+                        <!--End mc_embed_signup-->
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="titlePlusVersion match-logo-margin mBottom20">
+                        OUR OTHER SERVICES
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 other-services">
+                      <a href="https://centre.humdata.org" target="_blank" data-module="hdx_click_stopper" data-module-link_type="footer" aria-label="the centre for humanitarian data">
+                        <img class="lazyload logo-centre" data-src="/images/homepage/logo-centre-gray.png" alt="The Centre for Humanitarian Data logo">
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-4 other-services">
+                      <a href="https://hxlstandard.org/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="footer" aria-label="hxl">
+                        <img class="lazyload logo-hxl" data-src="/images/homepage/logo-hxl.svg" alt="HXL logo">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                
+                
+                
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row paddingRowHack" style="background-color: #252525;">
+      <div class="">
+        <div class="">
+          <div class="col-12 paddingLeftHack paddingRightHack">
+            <div class="social-footer">
+              <div class="terms">
+                <a href="/faqs/terms" data-module="hdx_click_stopper" data-module-link_type="footer">
+                  TERMS OF SERVICE
+                </a>
+                <a href="/about/hdx-qa-process" data-module="hdx_click_stopper" data-module-link_type="footer">
+                  QA PROCESS
+                </a>
+                <a href="https://github.com/OCHA-DAP" target="_blank" data-module="hdx_click_stopper" data-module-link_type="footer">
+                  OPEN SOURCE <i class="icon humanitarianicons-Out-of-platform"></i>
+                </a>
+                <a href="/faqs/devs" data-module="hdx_click_stopper" data-module-link_type="footer">
+                  RESOURCES FOR DEVELOPERS
+                </a>
+                <a href="/faqs/licenses" data-module="hdx_click_stopper" data-module-link_type="footer">
+                  DATA LICENSES
+                </a>
+                <a href="https://centre.humdata.org/category/blog/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="footer">
+                  BLOG <i class="icon humanitarianicons-Out-of-platform"></i>
+                </a>
+                <a href="https://centre.humdata.org/contact-us/" target="_blank" data-module="hdx_click_stopper" data-module-link_type="footer">
+                  CONTACT <i class="icon humanitarianicons-Out-of-platform"></i>
+                </a>
+                <span class="separator"></span>
+                <span class="social-actions">
+                  <a href="https://www.x.com/humdata" title="X" target="_blank" data-module="hdx_click_stopper" data-module-link_type="footer">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a href="https://github.com/OCHA-DAP" title="GitHub" target="_blank" data-module="hdx_click_stopper" data-module-link_type="footer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://linkedin.com/company/ocha-centre-for-humanitarian-data" title="LinkedIn" target="_blank" data-module="hdx_click_stopper" data-module-link_type="footer">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </span>
+              </div>
+              <div class="service">
+                <div class="provided-by">
+                  Service provided by
+                </div>
+                <div class="service-details">
+                  <div class="ocha-service">
+                    <img class="ocha-logo lazyload" data-src="/images/homepage/logo-ocha-lockup-white.png" alt="OCHA logo" />
+                    <div class="spacer"></div>
+                    <div class="ocha-text">
+                      OCHA coordinates the global emergency response to save lives and protect people in humanitarian
+                      crises. We advocate for effective and principled humanitarian action by all, for all.
+                    </div>
+                  </div>
+                  <div class="license-group">
+                    <div class="license">
+                      Except where otherwise noted, content on this site is
+                      licensed under a Creative Commons Attribution 4.0
+                      International license.
+                    </div>
+                    <div class="license-cc">
+                      <svg width="40" height="40" viewBox="0 0 32 32">
+                        <path d="M15.886 28.968c-7.159 0.009-12.857-5.804-12.884-12.802-0.027-7.097 5.847-13.062 12.902-12.881 6.356-0.152 12.793 4.975 12.829 12.839 0.035 7.721-6.201 12.836-12.847 12.844zM15.907 0.254c-9.353-0.056-15.873 7.837-15.907 15.828-0.036 8.503 6.961 15.927 15.827 15.918 8.53-0.009 15.954-6.753 15.885-15.803 0.111-8.79-6.935-15.89-15.805-15.943z"></path>
+                        <path d="M25.263 18.406c-0.958 1.921-3.394 2.767-5.132 2.632-4.489-0.347-5.501-3.918-4.747-6.567 0.701-2.462 3.115-3.831 6.002-3.466 1.667 0.21 2.961 0.886 3.863 2.334-0.818 0.397-1.591 0.773-2.382 1.157-0.165-0.166-0.288-0.268-0.381-0.388-0.535-0.7-1.25-0.982-2.19-0.822-0.93 0.158-1.479 0.714-1.589 1.482-0.117 0.814-0.094 1.668 0.039 2.482 0.126 0.777 0.707 1.336 1.62 1.462 0.99 0.137 1.856-0.059 2.38-0.931 0.065-0.108 0.161-0.201 0.309-0.382 0.728 0.332 1.444 0.658 2.208 1.007z"></path>
+                        <path d="M16.842 13.347c-0.871 0.415-1.613 0.768-2.391 1.138-0.156-0.15-0.304-0.262-0.412-0.4-0.545-0.698-1.269-0.964-2.203-0.797-0.888 0.159-1.44 0.687-1.541 1.432-0.115 0.841-0.101 1.718 0.030 2.557 0.122 0.784 0.725 1.323 1.637 1.444 0.956 0.126 1.8-0.056 2.326-0.887 0.081-0.128 0.193-0.241 0.346-0.43 0.737 0.339 1.452 0.667 2.206 1.014-0.357 0.81-0.978 1.311-1.659 1.759-2.518 1.661-6.749 0.909-7.962-1.851-1.013-2.305-0.422-5.145 1.656-6.505 2.136-1.398 5.664-1.088 7.33 0.691 0.212 0.226 0.376 0.49 0.636 0.834z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+  
+     
+  
+
+  
+
+
+
+  
+  
+      
+      
+
+    
+  
+  
+    
+  
+
+      
+
+    
+    
+    <link href="/webassets/vendor/53df638c_fontawesome.css" rel="stylesheet"/>
+    <script src="/base/vendor/jed.js" type="text/javascript"></script>
+<script src="/base/vendor/moment-with-locales.js" type="text/javascript"></script>
+<script src="/base/vendor/popperjs.js" type="text/javascript"></script>
+<script src="/base/vendor/purify.js" type="text/javascript"></script>
+<script src="/base/vendor/jquery.js" type="text/javascript"></script>
+<script src="/webassets/vendor/240e5086_jquery.js" type="text/javascript"></script>
+<script src="/webassets/vendor/6d1ad7e6_bootstrap.js" type="text/javascript"></script>
+<script src="/webassets/base/88c359cd_main.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/0aa93c28_ckan.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/bcc55700_jquery-extra.js" type="text/javascript"></script>
+<script src="/hdx_show_more.js" type="text/javascript"></script>
+<script src="/hdx_show_more_lines.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/e344ebfd_page-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/b49deafe_search-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/ef069373_popup-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/db2e72ca_onboarding-scripts.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-hdx_theme/d26b4b4f_onboarding-password-scripts.js" type="text/javascript"></script>
+  </body>
+  
+  
+</html>
