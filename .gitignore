@@ -13,3 +13,14 @@ data/processed/*
 # OS
 .DS_Store
 
+# Raw ingestion outputs
+ingestion/raw/
+ingestion/logs/*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
